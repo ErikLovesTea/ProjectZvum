@@ -3,7 +3,11 @@ project(projectzvum)
 
 add_subdirectory(SDL3)
 
-add_executable(projectzvum src/main.c src/mainmenu.c)
+add_executable(projectzvum src/main.c src/mainmenu.c
+		src/putman.c
+		src/putman.h
+		src/textman.c
+		src/textman.h)
 
 target_link_libraries(projectzvum PRIVATE SDL3::SDL3)
 

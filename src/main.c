@@ -42,6 +42,14 @@ SDL_AppResult SDL_AppEvent(void *appstate, SDL_Event *event){
 		return SDL_APP_SUCCESS;
 	}
 
+	if (event->type == SDL_EVENT_KEY_DOWN) {
+		registerInput(event);
+	}
+
+	if (event->type == SDL_EVENT_MOUSE_BUTTON_DOWN) {
+		registerMouse(event);
+	}
+
 	return SDL_APP_CONTINUE;
 }
 

@@ -22,8 +22,8 @@ SDL_Texture* settingsBtnTexture;
 SDL_FRect playBtnFRect;
 SDL_FRect settingsBtnFRect;
 
-const float globalGUIWidth = 100.0f;
-const float globalGUIHeight = 100.0f;
+const float globalGUIWidth = 75.0f;
+const float globalGUIHeight = 75.0f;
 
 
 bool texturesLoaded = false;
@@ -101,4 +101,12 @@ screenSize calculateLayout(){
 	    };
 
 	return temp;
+}
+
+void playBtnClicked(){
+	SDL_LogInfo(SDL_LOG_CATEGORY_APPLICATION, "Play button clicked");
+}
+
+void settingsBtnClicked() {
+	SDL_LogInfo(SDL_LOG_CATEGORY_APPLICATION, "Settings button clicked");
 }
