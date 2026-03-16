@@ -1,3 +1,5 @@
 SDL3/
 
 build/
+
+.idea/
